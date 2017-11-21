@@ -4,12 +4,12 @@ app = Flask(__name__)
 #Unused route. Just tells user where content is
 @app.route("/")
 def root():
-    return "Hello friends. localhost:5000/login is the site you are looking for"
+    return "Hello friends. localhost:5000/main is the site you are looking for"
 
 #Defines route to the 'Main menu' for this project
-@app.route('/login/')
+@app.route('/main/')
 def types():
-    return render_template("login.html")
+    return render_template("templates.html")
 
 #Puts the project online
 if __name__ == "__main__":
