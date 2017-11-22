@@ -4,7 +4,7 @@ app = Flask(__name__)
 #Unused route. Just tells user where content is
 @app.route("/")
 def root():
-    return "Hello friends. localhost:5000/main is the site you are looking for"
+    return "Please go to localhost:5000/main"
 
 #Defines route to the 'Main menu' for this project
 @app.route('/main/')
